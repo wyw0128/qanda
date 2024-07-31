@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --lightBgColor: #f5f5f5;
+    --onLightBgColor: #222222;
+    --darkBgColor: theme('colors.zinc.900');
+    --onDarkBgColor: #eee;
+    --login-bg: #1c2a38;
+  }
+}
+
+.theme-dark {
+  --primaryBg: var(--darkBgColor);
+  --onPrimaryBg: var(--onDarkBgColor);
+}
+
+.theme-light {
+  --primaryBg: var(--lightBgColor);
+  --onPrimaryBg: var(--onLightBgColor);
+}

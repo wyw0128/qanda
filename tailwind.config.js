@@ -6,7 +6,13 @@ export default {
     './.storybook/**/*.{js,ts,jsx,tsx}', // Add this line to include Storybook files
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        loginBg: 'var(--login-bg)',
+        primaryBg: 'var(--primaryBg)',
+        onPrimaryBg: 'var(--onPrimaryBg)',
+      },
+    },
   },
   plugins: [],
 };
