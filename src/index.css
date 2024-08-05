@@ -2,22 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
+/* NOTE: Css variables: https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
 @layer base {
   :root {
-    --lightBgColor: #f5f5f5;
-    --onLightBgColor: #222222;
-    --darkBgColor: theme('colors.zinc.900');
-    --onDarkBgColor: #eee;
-    --login-bg: #1c2a38;
+    --color-primary-error: theme('colors.red.600');
+    --color-button-primary: theme('colors.blue.600');
   }
 }
 
+.theme-default {
+  --bg-primary: theme('colors.sky.950');
+  --bg-ternary: theme(
+    'colors.white'
+  ); /* the background color of the input field */
+  --text-primary: theme('colors.gray.50');
+  --text-secondary: theme(
+    'colors.slate.950'
+  ); /* the text color inside input field */
+}
+
 .theme-dark {
-  --primaryBg: var(--darkBgColor);
-  --onPrimaryBg: var(--onDarkBgColor);
+  --bg-primary: theme('colors.zinc.800');
+  --bg-secondary: theme('colors.zinc.900');
+  --bg-ternary: theme(
+    'colors.zinc.600'
+  ); /* the background color of the input field */
+  --text-primary: theme('colors.gray.50');
+  --text-secondary: theme(
+    'colors.gray.50'
+  ); /* the text color inside input field */
 }
 
 .theme-light {
-  --primaryBg: var(--lightBgColor);
-  --onPrimaryBg: var(--onLightBgColor);
+  --bg-primary: theme('colors.white');
+  --bg-secondary: theme('colors.gray.200');
+  --bg-ternary: theme(
+    'colors.white'
+  ); /* the background color of the input field */
+  --text-primary: theme(colors.slate.950);
+  --text-secondary: theme(
+    'colors.slate.950'
+  ); /* the text color inside input field */
 }

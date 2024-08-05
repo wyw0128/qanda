@@ -7,10 +7,24 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Open Sans', 'sans-serif'],
+      },
+      backgroundColor: {
+        primary: 'var(--bg-primary)',
+        secondary: 'var(--bg-secondary)',
+        ternary: 'var(--bg-ternary)',
+      },
+      textColor: {
+        primary: 'var(--text-primary)',
+        secondary: 'var(--text-secondary)',
+        ternary: 'var(--text-ternary)',
+        'error-color': {
+          primary: 'var(--color-primary-error)',
+        },
+      },
       colors: {
-        loginBg: 'var(--login-bg)',
-        primaryBg: 'var(--primaryBg)',
-        onPrimaryBg: 'var(--onPrimaryBg)',
+        buttonPrimary: 'var(--color-button-primary)',
       },
     },
   },
