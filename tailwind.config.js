@@ -13,18 +13,15 @@ export default {
       backgroundColor: {
         primary: 'var(--bg-primary)',
         secondary: 'var(--bg-secondary)',
-        ternary: 'var(--bg-ternary)',
+        tertiary: 'var(--bg-tertiary)',
       },
       textColor: {
         primary: 'var(--text-primary)',
         secondary: 'var(--text-secondary)',
-        ternary: 'var(--text-ternary)',
+        tertiary: 'var(--text-tertiary)',
         'error-color': {
           primary: 'var(--color-primary-error)',
         },
-      },
-      colors: {
-        buttonPrimary: 'var(--color-button-primary)',
       },
     },
   },
