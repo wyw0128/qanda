@@ -1,3 +1,51 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* NOTE: Css variables: https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
+@layer base {
+  :root {
+    --color-primary-error: theme('colors.red.600');
+    --color-button-primary: theme('colors.blue.600');
+    --color-button-text-primary: theme('colors.white');
+  }
+}
+
+.theme-default {
+  --bg-primary: theme('colors.sky.950');
+  /* secondary bg; input background color; button secondary bg */
+  --bg-secondary: theme('colors.white');
+  /* button primary bg */
+  --bg-tertiary: theme('colors.blue.600');
+  --text-primary: theme(colors.gray.50);
+  /* input text color & button secondary text color */
+  --text-secondary: theme('colors.slate.950');
+  /* button primary text color */
+  --text-tertiary: theme('colors.gray.50');
+}
+
+.theme-dark {
+  --bg-primary: theme('colors.zinc.800');
+  /* secondary bg; input background color; button secondary bg */
+  --bg-secondary: theme('colors.zinc.600');
+  /* button primary bg */
+  --bg-tertiary: theme('colors.blue.600');
+  --text-primary: theme(colors.gray.50);
+  /* input text color & button secondary text color */
+  --text-secondary: theme('colors.gray.50');
+  /* button primary text color */
+  --text-tertiary: theme('colors.gray.50');
+}
+
+.theme-light {
+  --bg-primary: theme('colors.zinc.500');
+  /* secondary bg; input background color; button secondary bg */
+  --bg-secondary: theme('colors.white');
+  /* button primary bg */
+  --bg-tertiary: theme('colors.blue.600');
+  --text-primary: theme(colors.slate.950);
+  /* input text color & button secondary text color */
+  --text-secondary: theme('colors.slate.950');
+  /* button primary text color */
+  --text-tertiary: theme('colors.gray.50');
+}
